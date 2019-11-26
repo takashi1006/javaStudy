@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>インデックス</title>
+</head>
+<body>
+    <form method="GET" action="Result">
+        <p>
+            <label for="name">名前： </label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <label for="sex">性別： </label>
+            <input type="radio" name="sex" id="sex" value="男">男
+            <input type="radio" name="sex" id="sex" value="女">女
+        </p>
+        <p>
+            <label for="category">お問い合わせ種類：</label><br>
+            <select name="category" id="category">
+                <option value="製品について">製品について</option>
+                <option value="不具合やクレーム">不具合やクレーム</option>
+                <option value="アフターサポート">アフターサポート</option>
+            </select>
+        </p>
+        <p>
+            <label for="description">お問い合わせ内容</label><br>
+            <textarea name="description" id="description" cols="30" rows="5"></textarea>
+        </p>
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
